@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../components/default_container.dart';
-import '../components/off_day_widget.dart';
 import '../components/search_field_component.dart';
-import '../components/set_day_off_widget.dart';
-import '../components/time_slots_widget.dart';
 import '../widgets/card_submit_card_widget.dart';
 import '../widgets/opening_hours_card.dart';
 import '../widgets/revenue_widget_card.dart';
