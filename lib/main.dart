@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'screens/homepage.dart';
+import 'screens/revenue_page.dart';
 import 'screens/user_list_table.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
        
         primarySwatch: Colors.blue,
       ),
-      home:  UserListTable(),
+      home:  RevenuePage(),
     );
   }
 }
