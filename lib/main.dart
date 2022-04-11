@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'screens/homepage.dart';
-import 'screens/revenue_page.dart';
-import 'screens/user_list_table.dart';
-
+import 'screens/add_a_product_page.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -21,7 +17,7 @@ class MyApp extends StatelessWidget {
        
         primarySwatch: Colors.blue,
       ),
-      home:  RevenuePage(),
+      home:  AddProductPage(),
     );
   }
 }
