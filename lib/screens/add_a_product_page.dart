@@ -5,6 +5,7 @@ import 'package:getwidget/getwidget.dart';
 import '../components/create_event_banner.dart';
 import '../components/product_category_dropdown.dart';
 import '../components/product_category_row.dart';
+import '../components/quantity_packages_row.dart';
 import '../components/search_field_component.dart';
 
 class AddProductPage extends StatefulWidget {
@@ -157,7 +158,7 @@ class _AddProductPageState extends State<AddProductPage> {
               containerColor: Colors.cyanAccent,
             ),
             SizedBox(
-              height: 20,
+              height: 30,
             ),
             Container(
               height: MediaQuery.of(context).size.height * 1.8,
@@ -593,79 +594,6 @@ class _AddProductPageState extends State<AddProductPage> {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class QuantityPackagesRow extends StatelessWidget {
-  QuantityPackagesRow({
-    Key? key,
-    required this.containerTitle,
-    required this.amount,
-    required this.containerColor,
-    required this.containerText,
-  }) : super(key: key);
-
-  final containerColor;
-  final containerText;
-  final containerTitle;
-  final amount;
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 20),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Container(
-                height: 65,
-                width: MediaQuery.of(context).size.width / 5,
-                decoration: BoxDecoration(
-                  color: containerColor,
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: Center(
-                  child: Text(
-                    containerText,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    containerTitle,
-                    style: TextStyle(
-                      color: Colors.white60,
-                      fontSize: 15,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 5,
-                  ),
-                  Text(
-                    amount,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ],
       ),
     );
   }
