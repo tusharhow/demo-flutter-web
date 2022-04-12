@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/add_a_product_page.dart';
-import 'screens/checkout_page.dart';
-
+import 'package:flutter_demo_web/screens/upload_photo_page.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -13,12 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: CheckoutPage(),
-    );
+        title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: UploadPhotoPage());
   }
 }
