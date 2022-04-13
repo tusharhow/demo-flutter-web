@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_web/components/create_event_banner.dart';
 import 'package:flutter_demo_web/components/navigation.dart';
+import 'package:flutter_demo_web/responsive/responsive_layout.dart';
 import 'package:flutter_demo_web/screens/add_a_product_page.dart';
 import 'side_menu_row.dart';
 
