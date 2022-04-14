@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 
-class CreateEventBanner extends StatelessWidget {
-  const CreateEventBanner({
+class EventBanner extends StatelessWidget {
+  const EventBanner({
     Key? key,
+    required this.title,
+    required this.img,
+    required this.desc,
   }) : super(key: key);
+  final title;
+  final img;
+  final desc;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +39,7 @@ class CreateEventBanner extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          'Create an Event',
+                          title,
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 20,
@@ -51,7 +57,7 @@ class CreateEventBanner extends StatelessWidget {
                     child: Row(
                       children: [
                         Text(
-                          'Discovery tickets are ideal for building the loyalty of\nyour new customers. Invite your new customer\nseveral times to your business and thereby create a\nbuying habit with it.',
+                          desc,
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 10,
@@ -92,8 +98,8 @@ class CreateEventBanner extends StatelessWidget {
               Row(
                 children: [
                   Image.asset(
-                    "assets/images/banner.png",
-                    height: 80,
+                    img,
+                    height: 90,
                   ),
                 ],
               ),

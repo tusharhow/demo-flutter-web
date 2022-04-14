@@ -1,14 +1,6 @@
-import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_web/responsive/responsive_layout.dart';
 import 'package:flutter_demo_web/screens/upload_photo/upload_photo_mobile.dart';
-import '../components/default_textformfield.dart';
 import '../components/drawer.dart';
-import '../components/navigation.dart';
-import '../components/search_field_component.dart';
-import '../components/side_menu_bar.dart';
-import '../components/top_nav_bar.dart';
-import 'add_a_product_page.dart';
 import 'upload_photo/upload_photo_desktop.dart';
 
 class UploadPhotoPage extends StatefulWidget {

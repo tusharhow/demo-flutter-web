@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/components/checkbox/gf_checkbox.dart';
 import 'package:getwidget/getwidget.dart';
 
-import '../components/create_event_banner.dart';
+import '../components/event_banner.dart';
 import '../components/product_category_dropdown.dart';
 import '../components/product_category_row.dart';
 import '../components/quantity_packages_row.dart';
@@ -42,7 +42,11 @@ class _AddProductPageState extends State<AddProductPage> {
             SizedBox(
               height: 30,
             ),
-            CreateEventBanner(),
+          EventBanner(
+              title: 'Create an Event',
+              img: "assets/images/banner.png",
+              desc: 'Discovery tickets are ideal for building the loyalty of\nyour new customers. Invite your new customer\nseveral times to your business and thereby create a\nbuying habit with it.',
+            ),
             SizedBox(
               height: 20,
             ),
