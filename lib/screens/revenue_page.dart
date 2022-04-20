@@ -11,7 +11,7 @@ class RevenuePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _size = MediaQuery.of(context).size;
+   
     return Scaffold(
       body: LayoutBuilder(builder: (context, constraints) {
         if (constraints.maxWidth < 1613 || constraints.maxHeight < 715) {

@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_web/responsive/responsive_layout.dart';
-
 import '../../components/default_textformfield.dart';
-import '../../components/quantity_packages_category_card_desktop.dart';
-import '../../components/revenue_stat_card.dart';
 import '../../components/revenuue_stat_card_desktop.dart';
 import '../../components/side_menu_bar.dart';
-import '../../components/store_stats.dart';
 import '../../components/store_stats_desktop.dart';
 import '../../components/top_nav_bar.dart';
 
@@ -119,98 +115,6 @@ class RevenuePageDesktop extends StatelessWidget {
                         ),
                       ),
 
-                      // Row(
-                      //   children: [
-                      //     Padding(
-                      //       padding: const EdgeInsets.only(
-                      //           left: 20, top: 20, bottom: 20),
-                      //       child: Text(
-                      //         'Store Stats',
-                      //         style: TextStyle(
-                      //           color: Colors.white,
-                      //           fontSize: 18,
-                      //           fontWeight: FontWeight.bold,
-                      //         ),
-                      //       ),
-                      //     ),
-                      //   ],
-                      // ),
-                      // StoreStats(
-                      //   title: '34 Orders',
-                      //   subtitle: 'Awaiting Treatment',
-                      //   subtitleStyle: TextStyle(
-                      //     color: Color(0xff7161EF),
-                      //     fontSize: 12,
-                      //   ),
-                      // ),
-                      // SizedBox(
-                      //   height: 10,
-                      // ),
-                      // StoreStats(
-                      //   title: '1 Order',
-                      //   subtitle: 'Pending',
-                      //   subtitleStyle: TextStyle(
-                      //     color: Color(0xff3A1772),
-                      //     fontSize: 12,
-                      //   ),
-                      // ),
-                      // SizedBox(
-                      //   height: 10,
-                      // ),
-                      // StoreStats(
-                      //   title: '2 Product',
-                      //   subtitle: 'In Low Stock',
-                      //   subtitleStyle: TextStyle(
-                      //     color: Color(0xffFF934F),
-                      //     fontSize: 12,
-                      //   ),
-                      // ),
-                      // SizedBox(
-                      //   height: 10,
-                      // ),
-                      // StoreStats(
-                      //   title: '1 Product In',
-                      //   subtitle: 'Out Of Stock',
-                      //   subtitleStyle: TextStyle(
-                      //     color: Color(0xffD741A7),
-                      //     fontSize: 12,
-                      //   ),
-                      // ),
-                      // SizedBox(
-                      //   height: 30,
-                      // ),
-                      // Row(
-                      //   children: [
-                      //     Padding(
-                      //       padding: const EdgeInsets.only(left: 20),
-                      //       child: Text(
-                      //         'Sales By Product',
-                      //         style: TextStyle(
-                      //           color: Colors.white,
-                      //           fontSize: 18,
-                      //           fontWeight: FontWeight.bold,
-                      //         ),
-                      //       ),
-                      //     ),
-                      //   ],
-                      // ),
-                      // SizedBox(
-                      //   height: 20,
-                      // ),
-                      // Image.asset('assets/images/stat.png',
-                      //     height: _size.height * 0.2),
-                      // Center(
-                      //   child: Text(
-                      //     'Pas Encore De Vente !',
-                      //     style: TextStyle(
-                      //       color: Colors.white,
-                      //       fontSize: 13,
-                      //     ),
-                      //   ),
-                      // ),
-                      // SizedBox(
-                      //   height: 20,
-                      // ),
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
