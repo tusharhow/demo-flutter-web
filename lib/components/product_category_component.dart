@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_web/components/preview_button.dart';
 import 'package:getwidget/getwidget.dart';
 
 import 'product_category_dropdown.dart';
@@ -11,12 +12,16 @@ class ProductCategoryComponent extends StatefulWidget {
   State<ProductCategoryComponent> createState() =>
       _ProductCategoryComponentState();
 }
+
 bool _isChecked = false;
+
 class _ProductCategoryComponentState extends State<ProductCategoryComponent> {
   @override
   Widget build(BuildContext context) {
+    final _size = MediaQuery.of(context).size;
+
     return Container(
-      height: MediaQuery.of(context).size.height * 1.5,
+      // height: MediaQuery.of(context).size.height * 1.8,
       width: MediaQuery.of(context).size.width / 1.05,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -412,23 +417,7 @@ class _ProductCategoryComponentState extends State<ProductCategoryComponent> {
           SizedBox(
             height: 50,
           ),
-          Container(
-            height: 50,
-            width: MediaQuery.of(context).size.width / 3,
-            decoration: BoxDecoration(
-              color: Color(0xff3A1772),
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Center(
-              child: Text(
-                'Preview',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
-              ),
-            ),
-          ),
+          PreviewButton(size: _size),
           SizedBox(
             height: 20,
           ),
@@ -441,6 +430,7 @@ class _ProductCategoryComponentState extends State<ProductCategoryComponent> {
               ),
             ),
           ),
+          SizedBox(height: 30),
         ],
       ),
     );

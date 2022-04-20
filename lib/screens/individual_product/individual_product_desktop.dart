@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import '../../components/default_textformfield.dart';
 import '../../components/quantity_card.dart';
-import '../../components/quantity_packages_row.dart';
+// import '../../components/quantity_packages_row.dart';
 import '../../components/side_menu_bar.dart';
 import '../../components/top_nav_bar.dart';
 import '../../responsive/responsive_layout.dart';
@@ -15,44 +14,45 @@ class IndiviDualProductDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _size = MediaQuery.of(context).size;
-    List<Widget> _quantity = [
-      QuantityPackagesRow(
-        amount: '',
-        containerText: '50',
-        containerTitle: '',
-        containerColor: Colors.indigo,
-      ),
-      QuantityPackagesRow(
-        amount: '',
-        containerText: '56',
-        containerTitle: '',
-        containerColor: Colors.orange,
-      ),
-      QuantityPackagesRow(
-        amount: '',
-        containerText: '100',
-        containerTitle: '',
-        containerColor: Colors.redAccent,
-      ),
-      QuantityPackagesRow(
-        amount: '',
-        containerText: '25',
-        containerTitle: '',
-        containerColor: Colors.blue,
-      ),
-      QuantityPackagesRow(
-        amount: '',
-        containerText: '10',
-        containerTitle: '',
-        containerColor: Colors.orange,
-      ),
-      QuantityPackagesRow(
-        amount: '',
-        containerText: '69',
-        containerTitle: '',
-        containerColor: Colors.green,
-      ),
-    ];
+    // List<Widget> _quantity = [
+    //   QuantityPackagesRow(
+    //     amount: '',
+    //     containerText: '50',
+    //     containerTitle: '',
+    //     containerColor: Colors.indigo,
+    //   ),
+    //   QuantityPackagesRow(
+    //     amount: '',
+    //     containerText: '56',
+    //     containerTitle: '',
+    //     containerColor: Colors.orange,
+    //   ),
+    //   QuantityPackagesRow(
+    //     amount: '',
+    //     containerText: '100',
+    //     containerTitle: '',
+    //     containerColor: Colors.redAccent,
+    //   ),
+    //   QuantityPackagesRow(
+    //     amount: '',
+    //     containerText: '25',
+    //     containerTitle: '',
+    //     containerColor: Colors.blue,
+    //   ),
+    //   QuantityPackagesRow(
+    //     amount: '',
+    //     containerText: '10',
+    //     containerTitle: '',
+    //     containerColor: Colors.orange,
+    //   ),
+    //   QuantityPackagesRow(
+    //     amount: '',
+    //     containerText: '69',
+    //     containerTitle: '',
+    //     containerColor: Colors.green,
+    //   ),
+    // ];
+
     return Material(
       child: Column(children: [
         Row(children: [
@@ -331,4 +331,3 @@ class IndiviDualProductDesktop extends StatelessWidget {
     );
   }
 }
-

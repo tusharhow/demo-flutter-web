@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_web/screens/individual_product/individual_product_mobile.dart';
-
 import '../components/drawer.dart';
 import 'individual_product/individual_product_desktop.dart';
-import 'upload_photo/upload_photo_desktop.dart';
-import 'upload_photo/upload_photo_mobile.dart';
 
 class IndividualProduct extends StatelessWidget {
   IndividualProduct({Key? key}) : super(key: key);

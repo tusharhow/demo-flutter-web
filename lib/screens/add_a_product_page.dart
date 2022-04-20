@@ -1,17 +1,9 @@
-import 'package:contained_tab_bar_view/contained_tab_bar_view.dart';
 import 'package:flutter/material.dart';
-import 'package:getwidget/components/checkbox/gf_checkbox.dart';
-import 'package:getwidget/getwidget.dart';
-
-import '../components/default_textformfield.dart';
 import '../components/drawer.dart';
 import '../components/event_banner.dart';
 import '../components/product_category_component.dart';
 import '../components/quantity_of_packages_component.dart';
 import '../components/search_field_component.dart';
-import '../components/side_menu_bar.dart';
-import '../components/top_nav_bar.dart';
-import '../responsive/responsive_layout.dart';
 import 'add_a_product/add_product_desktop.dart';
 
 class AddProductPage extends StatefulWidget {

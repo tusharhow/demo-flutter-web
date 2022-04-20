@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
-
 import '../../components/event_banner.dart';
-import '../../components/product_category_dropdown.dart';
-import '../../components/product_category_row.dart';
 import '../../components/quantity_packages_row.dart';
 import '../../components/search_field_component.dart';
 

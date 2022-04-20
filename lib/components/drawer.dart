@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import '../screens/add_a_product_page.dart';
-import '../screens/upload_photo_page.dart';
 import 'navigation.dart';
 import 'sidebar_menu_row_mobile.dart';
 

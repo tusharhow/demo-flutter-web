@@ -39,28 +39,38 @@ class _DialougeBodyState extends State<DialougeBody> {
           SizedBox(
             width: 10,
           ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                widget.dialTitle,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                ),
+          Flexible(
+            child: Container(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    widget.dialTitle,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    softWrap: true,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  SizedBox(
+                    height: 5,
+                  ),
+                  Text(
+                    widget.dialSubTitle,
+                    style: TextStyle(
+                      color: Colors.black54,
+                      fontSize: 11,
+                    ),
+                    softWrap: true,
+                    maxLines: 3,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ],
               ),
-              SizedBox(
-                height: 5,
-              ),
-              Text(
-                widget.dialSubTitle,
-                style: TextStyle(
-                  color: Colors.black54,
-                  fontSize: 11,
-                ),
-              ),
-            ],
+            ),
           )
         ],
       ),

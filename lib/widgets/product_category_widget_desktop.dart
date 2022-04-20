@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
-
 import '../components/add_property_dropdown_desktop.dart';
-import '../components/dialogue_body_contents.dart';
 import '../components/preview_button.dart';
 
 class ProductCategoryComponentDesktop extends StatefulWidget {
@@ -490,4 +488,3 @@ class _ProductCategoryComponentDesktopState
     );
   }
 }
-

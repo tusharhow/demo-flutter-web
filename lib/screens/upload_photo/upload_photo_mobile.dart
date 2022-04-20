@@ -8,7 +8,9 @@ class UploadPhotoMobile extends StatelessWidget {
     Key? key,
     required Size size,
     required List<String> images,
-  }) : _size = size, _images = images, super(key: key);
+  })  : _size = size,
+        _images = images,
+        super(key: key);
 
   final Size _size;
   final List<String> _images;
@@ -164,8 +166,7 @@ class UploadPhotoMobile extends StatelessWidget {
                                           child: Image.network(
                                             _images[index],
                                             width: _size.width * 0.3,
-                                            height:
-                                                _size.height * 0.3,
+                                            height: _size.height * 0.3,
                                           ),
                                         );
                                       }),
@@ -189,9 +190,9 @@ class UploadPhotoMobile extends StatelessWidget {
                       Container(
                         height: 45,
                         width: _size.width / 3.5,
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () {},
-                          color: Color(0xff3A1772),
+                          // color: Color(0xff3A1772),
                           child: Text(
                             'Previous',
                             style: TextStyle(
@@ -207,9 +208,9 @@ class UploadPhotoMobile extends StatelessWidget {
                       Container(
                         height: 45,
                         width: _size.width / 3.5,
-                        child: RaisedButton(
+                        child: ElevatedButton(
                           onPressed: () {},
-                          color: Color(0xff3A1772),
+                          // color: Color(0xff3A1772),
                           child: Text(
                             'Submit',
                             style: TextStyle(

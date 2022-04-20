@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_web/screens/add_a_product_page.dart';
+import 'package:flutter_demo_web/screens/checkout_page.dart';
+import 'package:flutter_demo_web/screens/homepage.dart';
+import 'package:flutter_demo_web/screens/individual_product.dart';
 import 'package:flutter_demo_web/screens/upload_photo_page.dart';
+import 'package:flutter_demo_web/screens/user_list_table.dart';
+import 'package:flutter_demo_web/screens/revenue_page.dart';
 
-import 'screens/individual_product.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -20,5 +24,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: AddProductPage());
+    //CheckoutPage, MyHomePage, UserListTable, RevenuePage
+    //AddProductPage, IndividualProduct, UploadPhotoPage
   }
 }
