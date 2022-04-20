@@ -1,17 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo_web/components/quantityof_packages_row_desktop.dart';
-import 'package:getwidget/getwidget.dart';
-
-import '../../components/add_property_dropdown_desktop.dart';
 import '../../components/default_textformfield.dart';
-import '../../components/product_category_component.dart';
-import '../../components/product_category_dropdown.dart';
-import '../../components/product_category_row.dart';
-import '../../components/quantity_of_packages_component.dart';
-import '../../components/quantity_packages_row.dart';
 import '../../components/side_menu_bar.dart';
 import '../../components/top_nav_bar.dart';
-import '../../responsive/responsive_layout.dart';
 import '../../widgets/product_category_widget_desktop.dart';
 
 class AddAProductDesktop extends StatefulWidget {
@@ -22,11 +13,10 @@ class AddAProductDesktop extends StatefulWidget {
 }
 
 class _AddAProductDesktopState extends State<AddAProductDesktop> {
-  bool _isChecked = false;
   @override
   Widget build(BuildContext context) {
     final _size = MediaQuery.of(context).size;
-    String? dropdown;
+
     return SingleChildScrollView(
       child: Column(
         children: [

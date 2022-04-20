@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
 import '../components/add_property_dropdown_desktop.dart';
+import '../components/dialogue_body_contents.dart';
+import '../components/preview_button.dart';
 
 class ProductCategoryComponentDesktop extends StatefulWidget {
   ProductCategoryComponentDesktop({Key? key}) : super(key: key);
@@ -466,23 +468,7 @@ class _ProductCategoryComponentDesktopState
                   SizedBox(
                     height: 50,
                   ),
-                  Container(
-                    height: 50,
-                    width: MediaQuery.of(context).size.width / 3,
-                    decoration: BoxDecoration(
-                      color: Color(0xff3A1772),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Preview',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 15,
-                        ),
-                      ),
-                    ),
-                  ),
+                  PreviewButton(size: _size),
                   SizedBox(
                     height: 20,
                   ),
@@ -504,3 +490,4 @@ class _ProductCategoryComponentDesktopState
     );
   }
 }
+
