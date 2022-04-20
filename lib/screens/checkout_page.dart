@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_web/screens/checkout_page/checkout_page_mobile.dart';
 import '../components/checkout_button.dart';
 import '../components/search_field_component.dart';
 import '../widgets/checkout_card.dart';
+import 'checkout_page/checkout_page_desktop.dart';
 
 class CheckoutPage extends StatelessWidget {
   const CheckoutPage({Key? key}) : super(key: key);
@@ -9,38 +11,12 @@ class CheckoutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _size = MediaQuery.of(context).size;
-    return Scaffold(
-      backgroundColor: Color(0xff2E4154),
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        leading: SizedBox(
-          child: Image.asset(
-            "assets/images/menu.png",
-            width: 15,
-            height: 15,
-            color: Colors.white,
-          ),
-        ),
-      ),
-      body: SingleChildScrollView(
-          child: Column(
-        children: [
-          SearchFieldComponent(),
-          SizedBox(
-            height: 30,
-          ),
-          CheckOutCard(size: _size),
-          SizedBox(
-            height: 30,
-          ),
-          CheckOutButton(
-            size: _size,
-            firstTitle: 'Save Draft',
-            secondTitle: 'Submit',
-          )
-        ],
-      )),
-    );
+    return Scaffold(body: LayoutBuilder(builder: (context, constraints) {
+      if (constraints.maxWidth < 600 || constraints.maxHeight < 715) {
+        return CheckoutPageMobile();
+      } else {
+        return CheckoutPageDesktop();
+      }
+    }));
   }
 }
