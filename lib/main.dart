@@ -4,6 +4,7 @@ import 'package:flutter_demo_web/screens/checkout_page.dart';
 import 'package:flutter_demo_web/screens/upload_photo_page.dart';
 
 import 'screens/individual_product.dart';
+import 'screens/revenue_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +22,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: CheckoutPage());
+        home: RevenuePage());
   }
 }

@@ -164,8 +164,8 @@ class CheckoutPageDesktop extends StatelessWidget {
                         child: Row(
                           children: [
                             Container(
-                              height: 50,
-                              width: _size.width / 5,
+                              height: _size.height * 0.07,
+                              width: _size.width / 4.5,
                               decoration: BoxDecoration(
                                 color: Color(0xff63391E),
                                 borderRadius: BorderRadius.circular(10),
