@@ -65,6 +65,7 @@ class _UserListTableState extends State<UserListTable> {
                       ],
                     ),
                   ),
+                  
                   SizedBox(
                     height: 30,
                   ),

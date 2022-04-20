@@ -30,7 +30,7 @@ class _AddProductPageState extends State<AddProductPage> {
     return Scaffold(
       body: LayoutBuilder(
         builder: ((context, constraints) {
-          if (constraints.maxWidth < 600 || constraints.maxHeight < 715) {
+          if (constraints.maxWidth < 1691 || constraints.maxHeight < 715) {
             return Scaffold(
               backgroundColor: Color(0xff2E4154),
               key: _scaffoldKey,
@@ -154,4 +154,3 @@ class _AddProductPageState extends State<AddProductPage> {
     );
   }
 }
-
