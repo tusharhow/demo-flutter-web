@@ -6,6 +6,9 @@ import '../../components/quantity_card.dart';
 import '../../components/side_menu_bar.dart';
 import '../../components/top_nav_bar.dart';
 import '../../responsive/responsive_layout.dart';
+import '../../widgets/about_product_dropdown.dart';
+import '../../widgets/about_product_input_field.dart';
+import '../../widgets/profit_amount_column.dart';
 import 'individual_product_mobile.dart';
 
 class IndiviDualProductDesktop extends StatelessWidget {
